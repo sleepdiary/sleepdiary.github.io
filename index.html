@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" /> 
+        <meta name="theme-color" content="#000044">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/@mdi/font@latest/css/materialdesignicons.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.css" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+        <title>Home - Sleep Diary</title>
+    </head>
+    <body style="background:black">
+        <noscript><strong>Please enable JavaScript to view the site, or go to <a href="https://github.com/sleepdiary">our GitHub page</a>.</strong></noscript>
+        <div id="app">
+            <v-app>
+                <v-main>
+                    <div style="height:100%;max-width:600px;margin:auto" class="d-flex flex-column justify-center">
+
+                        <v-list>
+
+                            <v-subheader>Tools</v-subheader>
+
+                            <v-list-item href="/dashboard">
+                                <v-list-item-icon>
+                                    <v-icon>mdi-view-dashboard</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title>Dashboard</v-list-item-title>
+
+                                    <v-list-item-subtitle>Analyse your sleep diary</v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+
+                            <v-list-item href="/info/simulations.html">
+                                <v-list-item-icon>
+                                    <v-icon>mdi-dice-multiple</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title>Simulations</v-list-item-title>
+
+                                    <v-list-item-subtitle>Programatically-generated diaries</v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+
+                            <v-list-item
+                                href="https://github.com/sleepdiary/info/wiki"
+                            >
+                                <v-list-item-icon>
+                                    <v-icon>mdi-bookshelf</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title>Wiki</v-list-item-title>
+                                    <v-list-item-subtitle>Information from other people</v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+
+                            <v-subheader>Developer tools</v-subheader>
+
+                            <v-list-item
+                                href="https://github.com/sleepdiary/info"
+                            >
+                                <v-list-item-icon>
+                                    <v-icon>mdi-chart-tree</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title>Generate information</v-list-item-title>
+                                    <v-list-item-subtitle>Graphs, predictions etc.</v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+
+                            <v-list-item
+                                href="https://github.com/sleepdiary/report"
+                            >
+                                <v-list-item-icon>
+                                    <v-icon>mdi-file-pdf</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title>Printable report</v-list-item-title>
+                                    <v-list-item-subtitle>For sleep doctors</v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+
+                            <v-list-item
+                                href="https://github.com/sleepdiary/library"
+                            >
+                                <v-list-item-icon>
+                                    <v-icon>mdi-library</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title>Library</v-list-item-title>
+                                    <v-list-item-subtitle>Load and edit sleep diaries</v-list-item-subtitle>
+                                </v-list-item-content>
+                            </v-list-item>
+
+
+                            <v-subheader>About</v-subheader>
+
+                            <v-list-item
+                                href="https://github.com/sleepdiary/sleepdiary.github.io/"
+                            >
+                                <v-list-item-icon>
+                                    <v-icon>mdi-github</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title>Source code</v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+
+                            <v-list-item
+                                href="https://github.com/sleepdiary/sleepdiary.github.io/blob/main/LICENSE"
+                            >
+                                <v-list-item-icon>
+                                    <v-icon>mdi-license</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title>License</v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+
+                            <v-list-item
+                                href="https://github.com/sleepdiary/sleepdiary.github.io/issues/new"
+                            >
+                                <v-list-item-icon>
+                                    <v-icon>mdi-message</v-icon>
+                                </v-list-item-icon>
+                                <v-list-item-content>
+                                    <v-list-item-title>Contact us</v-list-item-title>
+                                </v-list-item-content>
+                            </v-list-item>
+
+                        </v-list>
+
+                    </div>
+                </v-main>
+            </v-app>
+        </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.x/dist/vue.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vuetify@2.x/dist/vuetify.min.js"></script>
+        <script>
+         new Vue({
+             el: '#app',
+             vuetify: new Vuetify({
+                 theme: { dark: true },
+             }),
+         })
+        </script>
+    </body>
+</html>
