@@ -8,4 +8,4 @@ Here are some links to get started:
 * [examine sleep information](https://github.com/sleepdiary/info)
 * [explore the wiki](https://github.com/sleepdiary/info/wiki)
 
-Developers may also be interested in [the sleep diary library](https://github.com/sleepdiary/library).
+Developers may also be interested in the [Sleep Diary Core Library](https://github.com/sleepdiary/core).
